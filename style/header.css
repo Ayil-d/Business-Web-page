@@ -1,0 +1,103 @@
+.roychan-header{
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  background-color: rgb(175, 151, 192);
+}
+
+.roychan-header-left-section{
+  display: flex;
+  align-items: center;
+}
+.roychan-logo{
+  height: 70px;
+  margin-left: 24px;
+}
+.roychan-logo:hover{
+  border: 1px solid white;
+}
+.roychan-header-middle-section{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search-bar{
+  flex: 1;
+  height: 34px;
+  padding-left: 16px;
+  font-size: 16px;
+  border: 1px solid rgb(236, 235, 235);
+  border-radius: 3px 0 0 3px;
+  box-shadow: inset 1px 2px 3px rgb(0, 0, 0.05);
+
+}
+.search-bar::placeholder{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+
+}
+.search-button{
+  height: 39px;
+  width: 55px;
+  border: 1px solid rgb(236, 235, 235);
+  border-radius: 0 3px 3px 0;
+  box-shadow: inset 1px 2px 3px rgb(0, 0, 0.05);
+  margin-left: -1px;
+  background-color:aqua
+
+}
+.search-icon{
+  width: 27px;
+  padding: 5px;
+
+}
+.roychan-header-right-section{
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.orders-link{
+  width: 55px;
+  margin-right:20px;
+}
+.orders-link:hover{
+  border: 1px solid white;
+}
+.orders-text,
+.returns-text {
+  color: white;
+  border:none;
+}
+
+
+
+.cart-link{
+  display: flex;
+}
+.cart-link:hover{
+  border: 1px solid white;
+}
+.cart-quantity{
+  color: white;
+  margin-left: -40px;
+  margin-bottom: 25px;
+  font-size: large;
+  font-weight: 700;
+}
+.cart-text{
+  margin-top: 25px;
+  margin-left: 35px;
+  color: white;
+  font-weight: 700;
+  border:none;
+}
+.cart-text:hover{
+  border-color: white;
+  border: 1px solid;
+
+}

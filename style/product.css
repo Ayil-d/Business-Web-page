@@ -1,0 +1,35 @@
+.products-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px ;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.first-product{
+  background-color: pink;
+}
+.second-product{
+  background-color: rgb(13, 111, 223);
+}
+.third-product{
+  background-color: pink;
+}
+.four-product{
+  background-color: rgb(13, 111, 223);
+}
+.five-product{
+  background-color: pink;
+}
+.six-product{
+  background-color: rgb(13, 111, 223);
+}
+.last-button{
+  background-color: white;
+  margin-top: 900px;
+  padding: 3px;
+}
+.copy-right{
+  margin-left: 620px;
+}
