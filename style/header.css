@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   /* border: 2px solid white; */
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(3, 6, 224);
 }
 
 .roychan-header-left-section{
@@ -19,12 +19,12 @@
   padding-left: 18px;
 }
 .roychan-logo{
-  height: 70px;
+  height: 65px;
   margin-left: 24px;
   padding: 6px;
 }
 .roychan-logo:hover{
-  border: 1px solid white;
+  border: 0.7px solid white;
 }
 .roychan-header-middle-section{
   flex: 1;
@@ -117,4 +117,18 @@
   border-color: white;
   border: 1px solid;
 
+}
+.last-button{
+  background-color: white;
+  height: 35px;
+  padding-bottom: 8px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.copy-right{
+  width: 120px;
+  margin-left: 300px;
+  font-size: 700;
 }
