@@ -108,17 +108,17 @@
   width: 400px;
 }
 .order-name{
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: larger;
   font-weight: 800;
 }
 .Arrive-date{
-  color: white;
+  color: rgb(2, 2, 2);
   margin-top: 7px;
   font-size: medium;
 }
 .Quantity{
-  color: white;
+  color: rgb(12, 12, 12);
   margin-top: 5px;
   font-size: medium;
 }
