@@ -20,8 +20,8 @@
 }
 .roychan-logo{
   height: 65px;
-  margin-left: 24px;
   padding: 6px;
+  display: flex;
 }
 .roychan-logo:hover{
   border: 0.7px solid white;
@@ -65,11 +65,12 @@
 
 }
 .roychan-header-right-section{
-  width: 180px;
+  /* width: 180px; */
   display: flex;
   justify-content: end;
   align-items: center;
   flex-shrink: 0;
+  padding-right: 18px;
 }
 .orders-link{
   /* width: 70px; */
@@ -92,6 +93,9 @@
 }
 .cart-link{
   display: flex;
+  /* flex: 1; */
+  flex-wrap: 1;
+  flex-shrink: 0;
 }
 .cart-link:hover{
   border: 1px solid white;
