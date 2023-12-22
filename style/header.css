@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   /* border: 2px solid white; */
-  background-color: rgb(3, 6, 224);
+  background-color: rgb(8, 9, 88);
 }
 
 .roychan-header-left-section{
@@ -123,7 +123,9 @@
 
 }
 .last-button{
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  background-color:black;
   height: 35px;
   padding-bottom: 8px;
   position: fixed;
@@ -132,7 +134,7 @@
   right: 0;
 }
 .copy-right{
-  width: 120px;
-  margin-left: 300px;
+  width: 100x;
+  height: 20px;
   font-size: 700;
 }
