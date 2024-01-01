@@ -1,34 +1,34 @@
 // import { products } from "../data/product";
 
 
-const products = [{
-  image: "image/products/athletic-cotton-socks-6-pairs.jpg",
-  name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
-  rating: {
-    stars: 4.5,
-    count: 87
-  },
-  priceCents: 1090,
-},
-{
-  image: "image/products/6-piece-white-dinner-plate-set.jpg",
-  name: "6-piece-white-dinner-plate-set",
-  rating: {
-    stars: 4,
-    count: 127
-  },
-  priceCents: 2095,
-},
-{
-  image: "image/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
-  name: "adults-plain-cotton-tshirt-2-pack-teal",
-  rating: {
-    stars: 4,
-    count: 56
-  },
-  priceCents: 799,
+// const products = [{
+//   image: "image/products/athletic-cotton-socks-6-pairs.jpg",
+//   name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+//   rating: {
+//     stars: 4.5,
+//     count: 87
+//   },
+//   priceCents: 1090,
+// },
+// {
+//   image: "image/products/6-piece-white-dinner-plate-set.jpg",
+//   name: "6-piece-white-dinner-plate-set",
+//   rating: {
+//     stars: 4,
+//     count: 127
+//   },
+//   priceCents: 2095,
+// },
+// {
+//   image: "image/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+//   name: "adults-plain-cotton-tshirt-2-pack-teal",
+//   rating: {
+//     stars: 4,
+//     count: 56
+//   },
+//   priceCents: 799,
 
-}];
+// }];
 
 let productsHTML = '';
 
