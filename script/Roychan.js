@@ -1,8 +1,8 @@
-import { products } from "../data/product";
+// import { products } from "../data/product";
 
 
 const products = [{
-  image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+  image: "image/products/athletic-cotton-socks-6-pairs.jpg",
   name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
   rating: {
     stars: 4.5,
@@ -30,16 +30,18 @@ const products = [{
 
 }];
 
+let productsHTML = '';
+
 products.forEach((product) => {
-  const html = `
+  productsHTML += `
     <div class="product-image-container">         
-      <img class="product-image" src="./image/products/6-piece-non-stick-baking-set.webp" alt="stick baking">
-      <div class="product-names">6-piece-non-stick-baking-set</div>
+      <img class="product-image" src="${product.image}" alt="stick baking">
+      <div class="product-names">${product.name}</div>
       <div class="rating-star">
-        <img class="image-rating" src="./image/ratings/rating-05.png" alt="">
-        <span class="rating-num">85</span>
+        <img class="image-rating" src="./image/ratings/rating-${product.rating.stars * 10}.png" alt="">
+        <span class="rating-num">${product.rating.count}</span>
       </div>
-      <div class="price">$10.90</div>
+      <div class="price">$${(product.priceCents / 100).toFixed(2)}</div>
       <select class="number-of-selected-product">
         <option selected value="1">1</option>
         <option value="2">2</option>
@@ -52,10 +54,9 @@ products.forEach((product) => {
     </div>
   `;
 
-  console.log(html);
-
 });
 
+console.log(productsHTML); 
 
 
-document.querySelector('.js-add-to-cart').innerHTML;
+document.querySelector('.js-product-grid').innerHTML = productsHTML;
