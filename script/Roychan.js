@@ -42,7 +42,7 @@ products.forEach((product) => {
         <span class="rating-num">${product.rating.count}</span>
       </div>
       <div class="price">$${(product.priceCents / 100).toFixed(2)}</div>
-      <select class="number-of-selected-product">
+      <select class="number-of-selected-product  js-quantity-selector-${product.id}">
         <option selected value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -72,13 +72,17 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
       }
     });
 
+    const querySelector = document.querySelector(`.js-quantity-selector-${productId}`);
+    // const quantity = querySelector.value;
+    const quantity = Number(querySelector.value);
+
     if (matchingItem){
-      matchingItem.quantity +=1;
+      matchingItem.quantity += quantity;
     } else {
       /* Add to the object to list of cart by using push */
       cart.push({
         productId: productId,
-        quantity: 1
+        quantity: quantity
       });
     }
 
@@ -89,11 +93,16 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     cart.forEach((item) => {
       cartquantity += item.quantity;
     });
+    
+ 
 
     document.querySelector('.js-cart-quantity').innerHTML= cartquantity;
 
 
+   
 
-    console.log(cart);
+
+
+  
   });
 });
